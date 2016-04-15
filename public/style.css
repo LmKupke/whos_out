@@ -1,0 +1,12 @@
+div.top-bar {
+  background-color: black;
+}
+
+div.top-bar-left ul {
+  background-color: black;
+  color: white;
+}
+
+div.top-bar-right ul {
+  background-color: black;
+}

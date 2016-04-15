@@ -1,5 +1,10 @@
 require 'sinatra'
 
 get '/' do
-  erb :login
+  redirect '/home'
+
+end
+
+get '/home' do
+  erb :home
 end
