@@ -2,32 +2,41 @@
 <html lang="en">
 <head>
   <title>Who's Out</title>
-  <link href="/style.css" rel="stylesheet" media="all">
-  <link href="/foundation.min.css" rel="stylesheet" media="all" />
+  <link href="/css/style.css" rel="stylesheet" media="all">
+  <link href="/css/foundation.min.css" rel="stylesheet" media="all" />
+  <link href="/css/foundation.css" rel="stylesheet" media="all" />
 </head>
 <body>
   <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
-          <li class="menu-text">Who's Out!</li>
-          <li><a href="/home">Home</a></li>
+          <li class="menu-text">Who's Out?</li>
         </ul>
       </div>
       <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="#">Go Out!</a></li>
-          <li><a href="#">Go to Group</a></li>
-          <li><a href="#">Add to Group</a></li>
-          <li><a href="#">Find Friend</a></li>
-        </ul>
+        <div class="large-8 small-9 column">
+          <input type="text" placeholder="Find Friends">
+        </div>
+        <div class="large-4 small-3 columns">
+          <a href="#" class="alert button expand">Search</a>
+        </div>
       </div>
+  </div>
+  <div class="icon-bar vertical five-up">
+    <ul class="side-nav">
+      <li><a href="/home">Home</a></li>
+      <li><a href="#">Go Out!</a></li>
+      <li><a href="#">Go to Group</a></li>
+      <li><a href="#">Add to Group</a></li>
+      <li><a href="#">Find Friend</a></li>
+    </ul>
   </div>
 
   <div class="row">
     <%= yield %>
   </div>
-  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="/app.js"></script>
-
+  <script src="/js/code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/app.js"></script>
+  <script>$(document).foundation();</script>
 </body>
 </html>
